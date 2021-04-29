@@ -24,11 +24,9 @@ const Todo =({text, completed, item, todo, setTodo}) => {
 
         return (
             <Todos>
-           
-              <p>{text}</p>
-           
-            <Button color="danger" onClick={DeleteHandler}>Delete</Button>
-            <Button className="btn btn-success m-3" onClick={CompleteHandler} >{complete ? "Completed" : "Not Done"}</Button>
+                <p>{text}</p>
+                <Button color="danger" onClick={DeleteHandler}>Delete</Button>
+                <Button className="btn btn-success m-3" onClick={CompleteHandler} >{complete ? "Completed" : "Not Done"}</Button>
          </Todos>
         );
     }
